@@ -1,0 +1,29 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @user.name
+%p
+  %b Latitude:
+  = @user.latitude
+%p
+  %b Longitude:
+  = @user.longitude
+%p
+  %b IP address:
+  = @user.ip_address
+%p
+  %b city
+  = @user.city
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path
+
+/ = image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}"
+/ %h3 Nearby locations
+/ %ul
+/   - for location in @user.nearbys(10)
+/     %li
+/       = link_to user.address, user
+/       (#{user.distance.round(2)} miles)
