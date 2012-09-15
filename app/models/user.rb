@@ -1,14 +1,11 @@
 class User < ActiveRecord::Base
-  require 'geocoder'
-  require "geocoder/railtie"
-  Geocoder::Railtie.insert
-  
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-  attr_accessible :latitude, :longitude, :name, :city
-
-  geocoded_by :ip_address,
-    :latitude => :lat, :longitude => :lon
-  after_validation :geocode
-
-
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid
+  # attr_accessible :title, :body
 end
