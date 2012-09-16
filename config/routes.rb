@@ -1,4 +1,10 @@
 Wikitrip::Application.routes.draw do
+  get "aboutus/index"
+
+  get "howitworks/index"
+
+  get "team/index"
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   get "home/index"
