@@ -6,6 +6,8 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
+gem 'ruby_parser'
+gem 'hpricot'
 gem 'simple_form'
 gem 'geocoder'
 gem 'omniauth-facebook'

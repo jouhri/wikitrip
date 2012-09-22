@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
 */
+
+#div_register
+{
+    padding-top: 2%;
+    margin-left: 66%;
+}
