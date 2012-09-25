@@ -1,0 +1,2 @@
+module HowitworksHelper
+end

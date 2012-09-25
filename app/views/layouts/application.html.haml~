@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Wikitrip
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .container
+      %header
+        #button.btn.btn-danger.btn-large
+          -if user_signed_in?
+            = link_to "SIGN OUT", destroy_user_session_path, :method => :delete
+          -else
+            = link_to "SIGN IN", new_user_session_path       
+        %nav
+          %ul.nav.nav-pills
+            %li.active
+              %a{:href => "#"} Wikitrip
+            %li
+              %a{:href => "#"}>
+              PinUp
+            %li
+              %a{:href => "#"}
+      = yield
+      %div
