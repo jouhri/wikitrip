@@ -8,12 +8,27 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
+ *= require_self
 */
 
 #div_register
 {
     padding-top: 2%;
     margin-left: 66%;
+}
+
+body 
+{
+	background-color: #FEF0DD;
+}
+
+header
+{
+	background-color: #838C65;
+}
+
+.navbar-inner
+{
+	background-color: #838C65;	
 }
