@@ -25,7 +25,64 @@ body
 
 header
 {
-	background-color: #838C65;
+	/*background-color: #838C65;*/
+	background-color: #FEF0DD;		
+	margin-top: 20px;
+	background-image: url("shadow_middle_bottom.png");
+	background-position: center bottom;
+	background-repeat: no-repeat; 
+}
+
+section
+{
+	text-align: center;
+	min-height: 500px;
+	background-image: url("shadow_middle_top.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 20px;
+}
+
+footer
+{
+	margin-top: 10px;
+	background-image: url("shadow_footer.png"), url("texture_footer_background.png");
+	background-repeat: no-repeat, repeat-x;
+	/*position:absolute;
+  	bottom:10px;
+  	width:100%;*/
+}
+
+.logo_wikitrip_footer
+{
+	margin-top: 10px;
+}
+
+.div_copyright
+{
+	margin-top: 10px;
+}
+
+.header_middle
+{
+	padding-bottom : 10px; 
+	/*margin-top: 10px;*/
+	/*margin-bottom: 10px;*/
+	background-image: url("texture_middle.png");
+	height: 100px;
+	background-repeat: repeat-x;
+}
+
+.logo_facebook_Co
+{
+	margin-top: 10px;
+}
+
+
+.logo_stamp
+{
+	display: block;
+	margin-top: 20px;
 }
 
 .navbar-inner

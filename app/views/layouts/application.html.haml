@@ -7,42 +7,41 @@
     = csrf_meta_tags
   %body
     %header
-      .container    
-        %ul.nav.nav-pills.application_nav
-          .span
-          %li
-            %a{:herf => root_path} WIKITRIP
-          %li
-            = link_to image_tag("glyphicons_335_pin_classic.png"), "#"
-            /= link_to(image_tag("glyphicons_335_pin_classic.png")) #{:href => "#"}
-          %li
-            = link_to image_tag("glyphicons_319_sort.png"), "#"
-          %li
-            = link_to image_tag("glyphicons_045_calendar.png"), "#"
-          .navbar-form.pull-right
-            #button.btn.btn-danger.btn-large
-              -if user_signed_in?
-                = link_to "SIGN OUT", destroy_user_session_path, :method => :delete 
-              -else
-                = link_to "SIGN IN", user_omniauth_authorize_path(:facebook)
-      /%header
-      /  #div_register
-      /   #button.btn.btn-danger.btn-large
-      /     -if user_signed_in?
-      /       = link_to "SIGN OUT", destroy_user_session_path, :method => :delete 
-      /     -else
-      /       = link_to "SIGN IN", user_omniauth_authorize_path(:facebook)
-      / %nav.span12
-      /   .span1
-      /     %a{:herf => root_path} WIKITRIP
-      /   .span10
-      /     %ul.nav.nav-pills.application_nav
-      /       %li.active
-      /         %a{:href => "#"} PinUp
-      /       %li
-      /         %a{:href => "#"} Dashboard
-      /       %li
-      /         %a{:href => "#"} Calendar
-    .container
-      = yield
-      %div
+      .container
+        .logo_facebook_Co
+          = link_to image_tag("logo_header_landingpage.png"), root_path
+          .pull-right
+            = link_to image_tag("connect_with_facebook.png"), user_omniauth_authorize_path(:facebook)
+            .logo_stamp
+              = image_tag("stamp.png")
+    .header_middle
+      / .container    
+      /   %ul.nav.nav-pills.application_nav
+      /     .span
+      /     %li
+      /       %a{:herf => root_path} WIKITRIP
+      /     %li
+      /       = link_to image_tag("glyphicons_335_pin_classic.png"), "#"
+      /     %li
+      /       = link_to image_tag("glyphicons_319_sort.png"), "#"
+      /     %li
+      /       = link_to image_tag("glyphicons_045_calendar.png"), "#"
+      /     .navbar-form.pull-right
+      /       #button.btn.btn-danger.btn-large
+      /         -if user_signed_in?
+      /           = link_to "SIGN OUT", destroy_user_session_path, :method => :delete 
+      /         -else
+      /           = link_to "SIGN IN", user_omniauth_authorize_path(:facebook)
+    
+    %section
+      .container
+        = yield
+    %footer
+      .container
+        .logo_wikitrip_footer
+          = image_tag("logo_footer.png")
+          .pull-right
+            .div_copyright
+              = image_tag("icon_facebook_footer.png")
+              = image_tag("icon_google_footer.png")
+              = image_tag("twitter_icon_footer.png") 
