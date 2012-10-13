@@ -23,26 +23,6 @@ body
 	background-color: #FEF0DD;
 }
 
-header
-{
-	/*background-color: #838C65;*/
-	background-color: #FEF0DD;		
-	margin-top: 20px;
-	background-image: url("shadow_middle_bottom.png");
-	background-position: center bottom;
-	background-repeat: no-repeat; 
-}
-
-section
-{
-	text-align: center;
-	min-height: 500px;
-	background-image: url("shadow_middle_top.png");
-	background-repeat: no-repeat;
-	background-position: center top;
-	padding-top: 20px;
-}
-
 footer
 {
 	margin-top: 10px;
@@ -61,16 +41,6 @@ footer
 .div_copyright
 {
 	margin-top: 10px;
-}
-
-.header_middle
-{
-	padding-bottom : 10px; 
-	/*margin-top: 10px;*/
-	/*margin-bottom: 10px;*/
-	background-image: url("texture_middle.png");
-	height: 100px;
-	background-repeat: repeat-x;
 }
 
 .logo_facebook_Co

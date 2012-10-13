@@ -1,3 +1,51 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header_middle
+{
+	padding-bottom : 10px; 
+	/*margin-top: 10px;*/
+	/*margin-bottom: 10px;*/
+	background-image: url("texture_middle.png");
+	height: 100px;
+	background-repeat: repeat-x;
+	text-align: center;
+}
+
+.header_middle p
+{
+	font-size : 20px;
+	color: #6F765C;
+}
+
+.header_middle p strong
+{
+	color: #e18156;
+}
+
+header
+{
+	/*background-color: #838C65;*/
+	background-color: #FEF0DD;		
+	margin-top: 20px;
+	background-image: url("shadow_middle_bottom.png");
+	background-position: center bottom;
+	background-repeat: no-repeat; 
+}
+
+section
+{
+	text-align: center;
+	min-height: 500px;
+	background-image: url("shadow_middle_top.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 20px;
+}
+
+section .container p
+{
+	font-size : 20px;
+	color: #65994c;
+}

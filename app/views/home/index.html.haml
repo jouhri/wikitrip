@@ -1,4 +1,15 @@
-= image_tag "http://maps.google.com/maps/api/staticmap?size=940x500&sensor=false&zoom=16&markers=#{@lat}%2C#{@long}"
+.header_middle
+  %p 
+    = "Meet-up travellers in"
+    %strong
+      = "#{@city}"
+  / %p.geoloc_city
+  /   = " #{@city}, #{@contry}" 
+%section
+  .container
+    %p
+      = "Unleash the unextpected social connection around you !"
+    = image_tag "http://maps.google.com/maps/api/staticmap?size=940x500&sensor=false&zoom=16&markers=#{@lat}%2C#{@long}"
 
 / %h1 Home#index
 / %p Find me in app/views/home/index.html.haml

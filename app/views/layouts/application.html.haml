@@ -14,7 +14,7 @@
             = link_to image_tag("connect_with_facebook.png"), user_omniauth_authorize_path(:facebook)
             .logo_stamp
               = image_tag("stamp.png")
-    .header_middle
+      / .header_middle
       / .container    
       /   %ul.nav.nav-pills.application_nav
       /     .span
@@ -33,9 +33,9 @@
       /         -else
       /           = link_to "SIGN IN", user_omniauth_authorize_path(:facebook)
     
-    %section
-      .container
-        = yield
+    / %section
+    /   .container
+    = yield
     %footer
       .container
         .logo_wikitrip_footer

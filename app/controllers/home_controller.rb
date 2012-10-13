@@ -3,6 +3,8 @@ class HomeController < ApplicationController
   	result = request.location
   	@lat = result.latitude
   	@long = result.longitude
+  	@city = "TEST CITY"# result.city
+  	@contry =  "TEST COUNTRY"# result.country_name
   	puts "==========================================================================================================="
   	puts result.inspect
   end
