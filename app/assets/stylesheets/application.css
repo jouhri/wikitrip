@@ -33,6 +33,16 @@ footer
   	width:100%;*/
 }
 
+header
+{
+	/*background-color: #838C65;*/
+	background-color: #FEF0DD;		
+	margin-top: 20px;
+/*	background-image: url("shadow_middle_bottom.png");*/
+	background-position: center bottom;
+	background-repeat: no-repeat; 
+}
+
 .link_footer
 {
 	color: #6F765C; 

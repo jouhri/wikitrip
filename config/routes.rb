@@ -1,4 +1,12 @@
 Wikitrip::Application.routes.draw do
+  get "contact/index"
+
+  get "the_team/index"
+
+  get "how_its_works/index"
+
+  get "about/index"
+
   get "aboutus/index"
 
   get "howitworks/index"
