@@ -33,8 +33,31 @@ footer
   	width:100%;*/
 }
 
+.link_footer
+{
+	color: #6F765C; 
+	padding-right: 5px;
+	text-align: right;
+	margin-top: 15px;
+	display: inline;
+	border-right-style:solid;
+	border-width: 1px;
+}
+
+.link_footer ul li a
+{
+	color: #6F765C;
+}
+
+p.pitch_wikitrip
+{
+	padding-top: 10px;
+	color: #6F765C;
+}
+
 .logo_wikitrip_footer
 {
+	display: inline-block;
 	margin-top: 10px;
 }
 

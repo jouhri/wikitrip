@@ -38,10 +38,23 @@
     = yield
     %footer
       .container
-        .logo_wikitrip_footer
-          = image_tag("logo_footer.png")
-          .pull-right
-            .div_copyright
-              = image_tag("icon_facebook_footer.png")
-              = image_tag("icon_google_footer.png")
-              = image_tag("twitter_icon_footer.png") 
+        .logo_wikitrip_footer.span3
+          = image_tag("logo_footer.png")        
+        .link_footer.span2
+          %ul.nav
+            %li
+              = link_to "about", "#"
+            %li
+              = link_to "how its works", "#"
+            %li
+              = link_to "the team", "#"
+            %li
+              = link_to "contact", "#"
+        .span4
+          %p.pitch_wikitrip
+            = "wikitrip is a social service that helps travelers to find, connect and share in the physical world with link-minde people"
+        .pull-right
+          .div_copyright
+            = image_tag("icon_facebook_footer.png")
+            = image_tag("icon_google_footer.png")
+            = image_tag("twitter_icon_footer.png") 
