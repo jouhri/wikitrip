@@ -28,19 +28,10 @@ footer
 	margin-top: 10px;
 	background-image: url("shadow_footer.png"), url("texture_footer_background.png");
 	background-repeat: no-repeat, repeat-x;
-	/*position:absolute;
-  	bottom:10px;
+	/*position:relative;
+	min-width: 400px;
+  	bottom:-10px;
   	width:100%;*/
-}
-
-header
-{
-	/*background-color: #838C65;*/
-	background-color: #FEF0DD;		
-	margin-top: 20px;
-/*	background-image: url("shadow_middle_bottom.png");*/
-	background-position: center bottom;
-	background-repeat: no-repeat; 
 }
 
 .link_footer
